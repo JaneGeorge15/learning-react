@@ -4,7 +4,7 @@ import Moment from 'react-moment';
 
 class ListAppointments extends Component {
   render() {
-
+    console.log('in list component', this.props);
     return (
       <div className="appointment-list item-list mb-3">
         {this.props.appointments.map(item => (
