@@ -28,19 +28,6 @@ export default function App() {
                 <button className="btn btn-primary" onClick={onclickHandle}>Task Tracker</button>
                 <Route path="/" exact strict component={Appointments}></Route>
                 <Route path="/task-tracker" exact strict component={TaskTracker}></Route>
-
-
-                {/* <button className="btn btn-primary" onClick={loginHandle}>{this.state.loggedIn ? 'LogOut' : 'LogIn'}</button> */}
-               
-
-                {/* <Route
-                  path="/task-tracker/:username"
-                  exact
-                  strict
-                  render={({match}) => (
-                    this.state.loggedIn ? <TaskTracker username={match.params.username}/> : <Redirect to="/"/>
-                  )}
-                ></Route> */}
               </div>
             </div>
           </div>
