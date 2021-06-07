@@ -3,14 +3,21 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/index.css';
 import App from './components/App';
+import TaskTracker from "./components/TaskTracker";
 import * as serviceWorker from './serviceWorker';
 import 'jquery/dist/jquery.js';
 import 'popper.js/dist/umd/popper.js';
 import 'bootstrap/dist/js/bootstrap.js'
+import { BrowserRouter, Route, Switch} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" component={App} />
+        <Route path="/task-tracker" component={TaskTracker} />
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
